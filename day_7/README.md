@@ -25,3 +25,9 @@
         - `:valid` is matched if data is inputed.
 
  - ##### pattern
+    - `a` — Matches one character that is a (not b, not aa, and so on).
+    - `abc` — Matches a, followed by b, followed by c.
+    - `ab?c`— Matches a, optionally followed by a single b, followed by c. ( ac or abc)
+    - `ab*c` — Matches a, optionally followed by any number of bs, followed by c. ( ac , abc, abbbbbc, and so on).
+    - `a|b` — Matches one character that is a or b.
+    - `abc|xyz` — Matches exactly abc or exactly xyz (but not abcxyz or a or y, and so on).
